@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emojional_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-wg-gz4">
+                                <rect key="frame" x="40" y="60" width="334" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="how are you feeling?">
+                                        <attributes>
+                                            <font key="NSFont" size="27" name="HoeflerText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mx-f4-ofy">
+                                <rect key="frame" x="70" y="127" width="274" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="😐"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KG9-mr-cWv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbH-GB-rhe">
+                                <rect key="frame" x="70" y="423" width="274" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="🥺"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdY-Ox-Nju"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6d-B3-xxR">
+                                <rect key="frame" x="70" y="275" width="274" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="😡"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSj-cm-9Rf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.83137254900000002" green="0.92156862750000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zdg-wg-gz4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="15A-mq-QYL"/>
+                            <constraint firstItem="zdg-wg-gz4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="B3t-eA-ery"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1mx-f4-ofy" secondAttribute="trailing" constant="70" id="Bt9-8g-reg"/>
+                            <constraint firstItem="w6d-B3-xxR" firstAttribute="top" secondItem="1mx-f4-ofy" secondAttribute="bottom" constant="40" id="DYw-Uc-bEP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zdg-wg-gz4" secondAttribute="trailing" constant="40" id="ICl-RZ-brU"/>
+                            <constraint firstItem="FbH-GB-rhe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="L6d-Wq-J2j"/>
+                            <constraint firstItem="zdg-wg-gz4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SVh-ng-wWV"/>
+                            <constraint firstItem="1mx-f4-ofy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="ZOI-fx-du3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w6d-B3-xxR" secondAttribute="trailing" constant="70" id="aHE-C8-o4i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FbH-GB-rhe" secondAttribute="trailing" constant="70" id="cMR-zs-HQs"/>
+                            <constraint firstItem="FbH-GB-rhe" firstAttribute="top" secondItem="w6d-B3-xxR" secondAttribute="bottom" constant="40" id="dRL-qy-4mi"/>
+                            <constraint firstItem="1mx-f4-ofy" firstAttribute="top" secondItem="zdg-wg-gz4" secondAttribute="bottom" constant="40" id="fBp-cS-GDK"/>
+                            <constraint firstItem="w6d-B3-xxR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="yrp-Nn-WHC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.125" y="101.25"/>
+        </scene>
+    </scenes>
+</document>
