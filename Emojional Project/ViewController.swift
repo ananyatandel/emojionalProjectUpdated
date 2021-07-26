@@ -16,12 +16,12 @@ class ViewController: UIViewController {
     }
 
 
-
- let emojis = ["😐": "meh", "😡": "angry", "🥺": "overwhelmed"]
+// declare array of options
+    let emojis = ["☀️": "happy", "⛈": "sadOrAngry", "💨": "worried"]
     
    
     
-let customMessages = ["meh": ["go for a run", "talk through it", "stand up for yourself"], "angry" : ["journal", "meditate", "go for a run"], "overwhelmed" : ["seek professional help", "call a loved one", "eat a pint of ice cream"] ]
+    let customMessages = ["happy": ["go for a picnic", "eat a snow cone", "go to the pool"], "sadOrAngry" : ["journal and/or meditate", "bake cookies", "watch your comfort movies/tv shows"], "worried" : ["go on a walk (if safe)", "stay in and read a book", "take a nap"] ]
     
     
 @IBAction func showMessage(sender: UIButton) {
@@ -32,7 +32,7 @@ let customMessages = ["meh": ["go for a run", "talk through it", "stand up for y
     
     let alertController = UIAlertController (title: "if you feel like this...", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
 
-
+//changes
     
     alertController.addAction(UIAlertAction(title: emojiMessage, style: UIAlertAction.Style.default, handler: nil))
 
